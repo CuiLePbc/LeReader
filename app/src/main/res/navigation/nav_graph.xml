@@ -3,27 +3,29 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/LocalFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="com.cuile.lereader.FirstFragment"
-        android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        android:id="@+id/LocalFragment"
+        android:name="com.cuile.lereader.LocalFragment"
+        android:label="@string/local_fragment_label"
+        tools:layout="@layout/fragment_local">
 
         <action
-            android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            android:id="@+id/action_LocalFragment_to_OnlineFragment"
+            app:launchSingleTop="true"
+            app:destination="@id/OnlineFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="com.cuile.lereader.SecondFragment"
-        android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        android:id="@+id/OnlineFragment"
+        android:name="com.cuile.lereader.OnlineFragment"
+        android:label="@string/online_fragment_label"
+        tools:layout="@layout/fragment_online">
 
         <action
-            android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            android:id="@+id/action_OnlineFragment_to_LocalFragment"
+            app:popUpTo="@id/LocalFragment"
+            app:destination="@id/LocalFragment" />
 
         <argument
             android:name="myArg"
