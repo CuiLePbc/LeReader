@@ -3,11 +3,11 @@
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
     <string name="local_fragment_label">Local Fragment</string>
-    <string name="online_fragment_label">OnLine Fragment</string>
+    <string name="store_fragment_label">Store Fragment</string>
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
     <string name="hello_local_fragment">Hello local fragment</string>
-    <string name="hello_online_fragment">Hello online fragment</string>
+    <string name="hello_store_fragment">Hello store fragment</string>
     <string name="pic_of_book_cover">书籍封面</string>
 </resources>

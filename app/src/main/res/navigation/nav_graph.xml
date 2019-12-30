@@ -7,28 +7,47 @@
 
     <fragment
         android:id="@+id/LocalFragment"
-        android:name="com.cuile.lereader.LocalFragment"
+        android:name="com.cuile.lereader.local.LocalFragment"
         android:label="@string/local_fragment_label"
         tools:layout="@layout/fragment_local">
 
         <action
-            android:id="@+id/action_LocalFragment_to_OnlineFragment"
+            android:id="@+id/action_LocalFragment_to_StoreFragment"
             app:launchSingleTop="true"
-            app:destination="@id/OnlineFragment" />
+            app:destination="@id/StoreFragment" />
+        <action
+            android:id="@+id/action_LocalFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
     </fragment>
     <fragment
-        android:id="@+id/OnlineFragment"
-        android:name="com.cuile.lereader.OnlineFragment"
-        android:label="@string/online_fragment_label"
-        tools:layout="@layout/fragment_online">
+        android:id="@+id/StoreFragment"
+        android:name="com.cuile.lereader.store.StoreFragment"
+        android:label="@string/store_fragment_label"
+        tools:layout="@layout/fragment_store">
 
         <action
-            android:id="@+id/action_OnlineFragment_to_LocalFragment"
+            android:id="@+id/action_StoreFragment_to_LocalFragment"
             app:popUpTo="@id/LocalFragment"
             app:destination="@id/LocalFragment" />
 
+        <action
+            android:id="@+id/action_StoreFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.cuile.lereader.book.DetailFragment"
+        android:label="detail_fragment"
+        tools:layout="@layout/detail_fragment" >
+        <action
+            android:id="@+id/action_detailFragment_to_StoreFragment"
+            app:destination="@id/StoreFragment" />
+        <action
+            android:id="@+id/action_detailFragment_to_LocalFragment"
+            app:destination="@id/LocalFragment" />
+
         <argument
-            android:name="myArg"
+            android:name="bookNote"
             app:argType="string" />
     </fragment>
 </navigation>

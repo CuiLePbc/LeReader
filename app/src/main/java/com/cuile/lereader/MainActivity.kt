@@ -19,9 +19,9 @@ class MainActivity : AppCompatActivity() {
             val navController = findNavController(R.id.nav_host_fragment)
             val currentFragmentLabel = navController.currentDestination?.label
             if (getString(R.string.local_fragment_label) == currentFragmentLabel){
-                navController.navigate(R.id.action_LocalFragment_to_OnlineFragment)
+                navController.navigate(R.id.action_LocalFragment_to_StoreFragment)
                 fab.setImageResource(R.drawable.ic_home_black_24dp)
-            } else if (getString(R.string.online_fragment_label) == currentFragmentLabel) {
+            } else if (getString(R.string.store_fragment_label) == currentFragmentLabel) {
                 navController.navigateUp()
                 fab.setImageResource(R.drawable.ic_add_black_24dp)
             }

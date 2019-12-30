@@ -7,7 +7,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <TextView
-        android:id="@+id/rankIdOnline"
+        android:id="@+id/rankIdStore"
         android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
         android:layout_width="28dp"
         android:layout_height="wrap_content"
@@ -18,49 +18,49 @@
         tools:text="1" />
 
     <TextView
-        android:id="@+id/bookTitleOnline"
+        android:id="@+id/bookTitleStore"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginBottom="8dp"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        app:layout_constraintBottom_toTopOf="@+id/bookAuthorOnline"
-        app:layout_constraintStart_toEndOf="@+id/bookCoverOnline"
+        app:layout_constraintBottom_toTopOf="@+id/bookAuthorStore"
+        app:layout_constraintStart_toEndOf="@+id/bookCoverStore"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="庆余年" />
 
     <TextView
-        android:id="@+id/bookAuthorOnline"
+        android:id="@+id/bookAuthorStore"
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/bookRemarkOnline"
-        app:layout_constraintStart_toStartOf="@+id/bookTitleOnline"
-        app:layout_constraintTop_toBottomOf="@+id/bookTitleOnline"
+        app:layout_constraintBottom_toTopOf="@+id/bookRemarkStore"
+        app:layout_constraintStart_toStartOf="@+id/bookTitleStore"
+        app:layout_constraintTop_toBottomOf="@+id/bookTitleStore"
         tools:text="猫腻" />
 
     <TextView
-        android:id="@+id/bookRemarkOnline"
+        android:id="@+id/bookRemarkStore"
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
         android:textAlignment="viewStart"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/bookTitleOnline"
-        app:layout_constraintTop_toBottomOf="@+id/bookAuthorOnline"
+        app:layout_constraintStart_toStartOf="@+id/bookTitleStore"
+        app:layout_constraintTop_toBottomOf="@+id/bookAuthorStore"
         tools:text="5.5⭐⭐⭐⭐⭐123人点评" />
 
     <ImageView
-        android:id="@+id/bookCoverOnline"
+        android:id="@+id/bookCoverStore"
         android:layout_width="60dp"
         android:layout_height="90dp"
         android:layout_marginStart="12dp"
         android:scaleType="fitXY"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/rankIdOnline"
+        app:layout_constraintStart_toEndOf="@+id/rankIdStore"
         app:layout_constraintTop_toTopOf="parent"
         android:contentDescription="@string/pic_of_book_cover"
         tools:src="@tools:sample/avatars" />

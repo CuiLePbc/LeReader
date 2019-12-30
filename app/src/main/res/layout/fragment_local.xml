@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LocalFragment">
+    tools:context=".local.LocalFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/bookLocalRecyclerView"
+        android:id="@+id/localRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:itemCount="100"
-        tools:listitem="@layout/item_local_recyclerview"/>
+        tools:listitem="@layout/item_local_recyclerview" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
