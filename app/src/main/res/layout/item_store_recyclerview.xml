@@ -53,6 +53,16 @@
         app:layout_constraintTop_toBottomOf="@+id/bookAuthorStore"
         tools:text="5.5⭐⭐⭐⭐⭐123人点评" />
 
+    <TextView
+        android:id="@+id/bookFromStore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:layout_marginStart="4dp"
+        app:layout_constraintBaseline_toBaselineOf="@id/bookRemarkStore"
+        app:layout_constraintStart_toEndOf="@id/bookRemarkStore"
+        tools:text="起点中文网" />
+
     <ImageView
         android:id="@+id/bookCoverStore"
         android:layout_width="60dp"

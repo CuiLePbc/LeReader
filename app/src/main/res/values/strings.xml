@@ -10,4 +10,7 @@
     <string name="hello_local_fragment">Hello local fragment</string>
     <string name="hello_store_fragment">Hello store fragment</string>
     <string name="pic_of_book_cover">书籍封面</string>
+    <string name="action_search">action_search</string>
+    <string name="book_name_want_to_search">请输入要搜索的书名</string>
+    <string name="search_area">搜索范围</string>
 </resources>

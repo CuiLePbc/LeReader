@@ -43,6 +43,7 @@ class StoreRecyclerAdapter(private val itemClickListener: (BookInfo) -> Unit) : 
         private val titleTV: TextView = itemView.findViewById(R.id.bookTitleStore)
         private val authorTV: TextView = itemView.findViewById(R.id.bookAuthorStore)
         private val remarkTV: TextView = itemView.findViewById(R.id.bookRemarkStore)
+        private val fromTV: TextView = itemView.findViewById(R.id.bookFromStore)
         private val coverIV: ImageView = itemView.findViewById(R.id.bookCoverStore)
 
         fun bindView(bookInfo: BookInfo, onclickListener: (BookInfo) -> Unit) {
@@ -51,6 +52,7 @@ class StoreRecyclerAdapter(private val itemClickListener: (BookInfo) -> Unit) : 
                 titleTV.text = title
                 authorTV.text = author
                 remarkTV.text = remarkScore.toString()
+                fromTV.text = origin
                 if (coverImgUrl.isNotEmpty())
                     coverIV.setImageURI(Uri.parse(coverImgUrl))
                 else

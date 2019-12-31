@@ -8,9 +8,6 @@ import kotlinx.coroutines.*
  * 统一提供数据类
  */
 class Repository {
-    init {
-
-    }
 
     suspend fun getStoreBooks(): MutableList<BookInfo> = withContext(Dispatchers.IO) {
         val books = mutableListOf<BookInfo>()
